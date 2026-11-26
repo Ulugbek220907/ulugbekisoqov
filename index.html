@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="/styles.css">
 
   <script>
-    /* Apply saved theme and language before first paint */
+    /* Apply saved theme before first paint */
     (function () {
       try {
         var t = localStorage.getItem('theme');
@@ -81,7 +81,7 @@
     </defs>
   </svg>
 
-  <a class="skip" href="#work" data-i18n="skip">Skip to content</a>
+  <a class="skip" href="#work">Skip to content</a>
 
   <header class="topbar">
     <div class="wrap topbar-inner">
@@ -90,15 +90,11 @@
         <span>ulugbekisoqov<span class="brand-tld">.uz</span></span>
       </a>
       <nav class="nav" aria-label="Main">
-        <a href="#work" data-i18n="nav.work">Work</a>
-        <a href="#about" data-i18n="nav.about">About</a>
-        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="controls">
-        <div class="lang" role="group" aria-label="Language">
-          <button type="button" id="lang-en" data-lang="en" aria-pressed="true">EN</button>
-          <button type="button" id="lang-uz" data-lang="uz" aria-pressed="false">UZ</button>
-        </div>
         <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch colour theme">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
         </button>
@@ -111,15 +107,15 @@
       <canvas id="sky" class="hero-sky" aria-hidden="true"></canvas>
       <div class="hero-veil" aria-hidden="true"></div>
       <div class="wrap hero-inner">
-        <p class="eyebrow hero-eyebrow" data-i18n="hero.eyebrow">Developer and product builder</p>
+        <p class="eyebrow hero-eyebrow">Developer and product builder</p>
         <h1 id="hero-name" class="hero-name">Ulugbek<br><span>Isoqov</span></h1>
-        <p class="hero-lede" data-i18n="hero.lede">I build web products that help people learn. My work started with TestDay, an IELTS practice platform for test takers in Uzbekistan and beyond.</p>
+        <p class="hero-lede">I build web products that help people learn. My work started with TestDay, an IELTS practice platform for test takers in Uzbekistan and beyond.</p>
         <div class="hero-actions">
-          <a class="btn btn-gold" href="#work" data-i18n="hero.cta1">See my work</a>
-          <a class="btn btn-ghost" href="#contact" data-i18n="hero.cta2">Get in touch</a>
+          <a class="btn btn-gold" href="#work">See my work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
       </div>
-      <p class="wrap hero-caption" data-i18n="hero.caption">This sky holds 1,018 stars, the number in Mirzo Ulug‘bek’s star catalogue, Samarkand, 1437.</p>
+      <p class="wrap hero-caption">This sky holds 1,018 stars, the number in Mirzo Ulug‘bek’s star catalogue, Samarkand, 1437.</p>
     </section>
 
     <svg class="band" aria-hidden="true"><rect width="100%" height="100%" fill="url(#girih)"/></svg>
@@ -127,8 +123,8 @@
     <section id="work" class="section" aria-labelledby="work-title">
       <div class="wrap">
         <header class="section-head">
-          <p class="eyebrow" data-i18n="work.eyebrow">Selected work</p>
-          <h2 id="work-title" data-i18n="work.title">Things I’ve built</h2>
+          <p class="eyebrow">Selected work</p>
+          <h2 id="work-title">Things I’ve built</h2>
         </header>
 
         <article class="project">
@@ -157,14 +153,14 @@
           <div class="project-text">
             <p class="project-domain">testday.uz</p>
             <h3>TestDay</h3>
-            <p class="project-tagline" data-i18n="p1.tagline">IELTS practice tests on a screen like the real exam.</p>
-            <p data-i18n="p1.body">Timed Listening, Academic Reading, Writing and Speaking tests in the computer-delivered format, with instant band estimates and explained answers. It also has an AI Speaking examiner, a Writing checker and a band score calculator.</p>
+            <p class="project-tagline">IELTS practice tests on a screen like the real exam.</p>
+            <p>Timed Listening, Academic Reading, Writing and Speaking tests in the computer-delivered format, with instant band estimates and explained answers. It also has an AI Speaking examiner, a Writing checker and a band score calculator.</p>
             <ul class="tags" aria-label="Highlights">
-              <li data-i18n="p1.t1">EdTech</li>
-              <li data-i18n="p1.t2">AI examiner</li>
-              <li data-i18n="p1.t3">English · O‘zbek · Русский</li>
+              <li>EdTech</li>
+              <li>AI examiner</li>
+              <li>English · O‘zbek · Русский</li>
             </ul>
-            <a class="link-arrow" href="https://testday.uz" target="_blank" rel="noopener"><span data-i18n="p1.link">Visit testday.uz</span> <span aria-hidden="true">↗</span></a>
+            <a class="link-arrow" href="https://testday.uz" target="_blank" rel="noopener"><span>Visit testday.uz</span> <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
@@ -185,13 +181,13 @@
             <p class="project-domain">cifssupport.me</p>
             <h3>CIFS Support · Quizium</h3>
             <!-- EDIT: describe CIFS Support / Quizium in your own words -->
-            <p class="project-tagline" data-i18n="p2.tagline">Quizzes and study support in one place.</p>
-            <p data-i18n="p2.body">Quizium is a quiz platform for CIFS students. Learners practise with question sets, see the right answer straight away and track how they improve.</p>
+            <p class="project-tagline">Quizzes and study support in one place.</p>
+            <p>Quizium is a quiz platform for CIFS students. Learners practise with question sets, see the right answer straight away and track how they improve.</p>
             <ul class="tags" aria-label="Highlights">
-              <li data-i18n="p2.t1">Quizzes</li>
-              <li data-i18n="p2.t2">Study support</li>
+              <li>Quizzes</li>
+              <li>Study support</li>
             </ul>
-            <a class="link-arrow" href="https://cifssupport.me" target="_blank" rel="noopener"><span data-i18n="p2.link">Visit cifssupport.me</span> <span aria-hidden="true">↗</span></a>
+            <a class="link-arrow" href="https://cifssupport.me" target="_blank" rel="noopener"><span>Visit cifssupport.me</span> <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -205,53 +201,57 @@
             <img src="/avatar.jpg" alt="Ulugbek Isoqov’s profile picture: the King of Spades" width="160" height="160" loading="lazy" decoding="async" onerror="this.parentNode.classList.add('is-empty');this.remove()">
             <svg class="avatar-fallback" aria-hidden="true"><use href="#rosette"/></svg>
           </figure>
-          <p class="eyebrow" data-i18n="about.eyebrow">About</p>
-          <h2 id="about-title" data-i18n="about.title">Hello, I’m Ulugbek</h2>
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Hello, I’m Ulugbek</h2>
         </header>
         <div class="about-body">
           <!-- EDIT: make this your own story -->
-          <p data-i18n="about.p1">I’m a developer from Uzbekistan. I design and build products end to end: the interface, the backend, and the content that makes them useful.</p>
-          <p data-i18n="about.p2">I care about tools that work as well in Uzbek and Russian as they do in English, because the people I build for switch between all three. I like small teams, fast releases and listening to the people who use what I make.</p>
+          <p>I’m a developer from Uzbekistan. I design and build products end to end: the interface, the backend, and the content that makes them useful.</p>
+          <p>I care about tools that work as well in Uzbek and Russian as they do in English, because the people I build for switch between all three. I like small teams, fast releases and listening to the people who use what I make.</p>
         </div>
       </div>
 
       <div class="wrap">
-        <h3 class="kept-title eyebrow" data-i18n="kept.title">Ideas I keep close</h3>
+        <h3 class="kept-title eyebrow">Ideas I keep close</h3>
         <div class="kept">
           <figure class="note">
             <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M4 36 V12 H20 V28 H12 V20 M28 36 V12 H44 V28 H36 V20" fill="none" stroke="currentColor" stroke-width="2.4"/></svg>
-            <blockquote data-i18n="kept.q1">“Eat and drink with your relatives; do business with strangers.”</blockquote>
-            <figcaption><span class="note-src" data-i18n="kept.s1">Greek proverb</span><span data-i18n="kept.m1">Keep family close and business clear. Both last longer that way.</span></figcaption>
+            <blockquote>“Eat and drink with your relatives; do business with strangers.”</blockquote>
+            <figcaption><span class="note-src">Greek proverb</span><span>Keep family close and business clear. Both last longer that way.</span></figcaption>
           </figure>
           <figure class="note">
             <svg class="note-icon" aria-hidden="true"><use href="#rosette"/></svg>
-            <blockquote data-i18n="kept.q2">“Every non carries a chekich mark.”</blockquote>
-            <figcaption><span class="note-src" data-i18n="kept.s2">Uzbek bakery</span><span data-i18n="kept.m2">Bakers press a chekich stamp into the centre of each loaf. I want my work to be recognised the same way, by the care in it.</span></figcaption>
+            <blockquote>“Every non carries a chekich mark.”</blockquote>
+            <figcaption><span class="note-src">Uzbek bakery</span><span>Bakers press a chekich stamp into the centre of each loaf. I want my work to be recognised the same way, by the care in it.</span></figcaption>
           </figure>
           <figure class="note">
             <svg class="note-icon" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 24 m0 -3 a3 3 0 1 1 -3 3 a7 7 0 0 1 7 -7 a11 11 0 0 1 11 11 a15 15 0 0 1 -15 15 a19 19 0 0 1 -19 -19" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
-            <blockquote data-i18n="kept.q3">“Great things are done by a series of small things brought together.”</blockquote>
-            <figcaption><span class="note-src" data-i18n="kept.s3">Vincent van Gogh, letter to Theo, 1882</span><span data-i18n="kept.m3">Products grow the same way: one test, one fix, one release at a time.</span></figcaption>
+            <blockquote>“Great things are done by a series of small things brought together.”</blockquote>
+            <figcaption><span class="note-src">Vincent van Gogh, letter to Theo, 1882</span><span>Products grow the same way: one test, one fix, one release at a time.</span></figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact" aria-labelledby="contact-title">
+    <section id="contact" class="contact" aria-labelledby="contact-title">
       <div class="wrap contact-inner">
-        <div>
-          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-          <h2 id="contact-title" data-i18n="contact.title">Let’s build something useful</h2>
-          <p class="contact-lede" data-i18n="contact.lede">Have an idea, a project, or feedback on TestDay? I read every message.</p>
+        <div class="contact-text">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let’s build something useful</h2>
+          <p class="contact-lede">Have an idea, a project, or feedback on TestDay? I read every message.</p>
+          <!-- EDIT: add Telegram / email / LinkedIn rows here, e.g.
+               <li><span class="contact-k">Telegram</span><a href="https://t.me/your_handle" target="_blank" rel="noopener">@your_handle</a></li>
+               <li><span class="contact-k">Email</span><a href="mailto:hello@ulugbekisoqov.uz">hello@ulugbekisoqov.uz</a></li> -->
+          <ul class="contact-list">
+            <li><span class="contact-k">GitHub</span><a href="https://github.com/ulugbek220907" target="_blank" rel="noopener">github.com/ulugbek220907</a></li>
+            <li><span class="contact-k">TestDay</span><a href="https://testday.uz" target="_blank" rel="noopener">testday.uz</a></li>
+            <li><span class="contact-k">Quizium</span><a href="https://cifssupport.me" target="_blank" rel="noopener">cifssupport.me</a></li>
+          </ul>
         </div>
-        <!-- EDIT: add Telegram / email / LinkedIn rows here, e.g.
-             <li><span class="contact-k">Telegram</span><a href="https://t.me/your_handle" target="_blank" rel="noopener">@your_handle</a></li>
-             <li><span class="contact-k">Email</span><a href="mailto:hello@ulugbekisoqov.uz">hello@ulugbekisoqov.uz</a></li> -->
-        <ul class="contact-list">
-          <li><span class="contact-k">GitHub</span><a href="https://github.com/ulugbek220907" target="_blank" rel="noopener">github.com/ulugbek220907</a></li>
-          <li><span class="contact-k">TestDay</span><a href="https://testday.uz" target="_blank" rel="noopener">testday.uz</a></li>
-          <li><span class="contact-k">Quizium</span><a href="https://cifssupport.me" target="_blank" rel="noopener">cifssupport.me</a></li>
-        </ul>
+        <figure class="contact-photo">
+          <img src="/night-sky.webp" alt="The Milky Way over a dark line of pine trees" width="736" height="1308" loading="lazy" decoding="async">
+          <figcaption>The same sky Ulug‘bek charted, six centuries later.</figcaption>
+        </figure>
       </div>
     </section>
   </main>
@@ -260,7 +260,7 @@
     <svg class="band" aria-hidden="true"><rect width="100%" height="100%" fill="url(#girih)"/></svg>
     <div class="wrap footer-inner">
       <p>© <span id="year">2026</span> Ulugbek Isoqov</p>
-      <p class="footer-note" data-i18n="footer.note">Made in Uzbekistan, under 1,018 stars.</p>
+      <p class="footer-note">Made in Uzbekistan, under 1,018 stars.</p>
     </div>
   </footer>
 

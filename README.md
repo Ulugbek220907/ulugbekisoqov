@@ -8,12 +8,12 @@ Personal website of Ulugbek Isoqov. Plain HTML, CSS and JavaScript, with no buil
 | --- | --- |
 | `index.html` | The page. Look for `<!-- EDIT -->` comments for text and contact links to fill in. |
 | `styles.css` | All styles. Colours and fonts are tokens at the top. |
-| `script.js` | English / Uzbek switch, light / dark switch, and the painted night-sky hero. |
+| `script.js` | Light / dark switch, and the painted night-sky hero. |
 | `avatar.jpg` | Your profile picture (square). Add it to the repo root. |
 | `og.jpg` | Preview image shown when the link is shared (1200×630). |
 | `404.html` | Page-not-found screen. |
 
-Uzbek text lives in the `UZ` object at the top of `script.js`. English text is read from the HTML.
+The contact photo is `night-sky.webp`.
 
 ## Run locally
 
