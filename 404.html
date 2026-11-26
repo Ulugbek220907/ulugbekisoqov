@@ -8,20 +8,23 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Onest:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&display=swap">
   <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-  <main class="hero lost">
-    <canvas id="sky" class="hero-sky" aria-hidden="true"></canvas>
-    <div class="hero-veil" aria-hidden="true"></div>
-    <div class="wrap hero-inner">
-      <p class="eyebrow hero-eyebrow">404</p>
-      <h1 class="hero-name" style="font-size:clamp(2.2rem,1.2rem + 5vw,4.6rem)">This page drifted off among the stars</h1>
-      <p class="hero-lede">The page you were looking for does not exist or has moved.</p>
-      <div class="hero-actions"><a class="btn btn-gold" href="/">Back to the home page</a></div>
+  <header class="hero lost">
+    <div class="scene" aria-hidden="true">
+      <img class="scene-layer" src="/night-sky.webp" alt="" width="736" height="1308">
+      <p class="hero-name">404</p>
+      <img class="scene-layer scene-trees" src="/trees.webp" alt="" width="736" height="1308">
     </div>
-  </main>
-  <script src="/script.js" defer></script>
+    <nav class="top wrap" aria-label="Main">
+      <a class="top-home" href="/">ulugbekisoqov.uz</a>
+    </nav>
+    <div class="hero-foot wrap">
+      <h1 class="hero-line">This page doesn’t exist or has moved.</h1>
+      <div class="hero-actions"><a class="btn btn-light" href="/">Go to the home page</a></div>
+    </div>
+  </header>
 </body>
 </html>
